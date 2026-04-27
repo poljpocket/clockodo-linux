@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
   "build": {
     "appId": "com.poljpocket.clockodo-linux",
     "productName": "Clockodo-Linux",

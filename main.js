@@ -1,5 +1,9 @@
-const { app, BrowserWindow, Tray, Menu, session } = require('electron');
-const path = require('path');
+import { app, BrowserWindow, Tray, Menu, session } from 'electron';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 app.commandLine.appendSwitch('use-gl', 'angle');
 app.commandLine.appendSwitch('use-angle', 'vulkan');
