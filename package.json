@@ -1,0 +1,42 @@
+{
+  "name": "clockodo-linux",
+  "version": "1.0.0",
+  "description": "Unofficial Clocko:do client for Linux using Electron.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --linux"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "build": {
+    "appId": "com.poljpocket.clockodo-linux",
+    "productName": "Clockodo-Linux",
+    "icon": "icon.png",
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Chat;Network;Office",
+      "packageCategory": "net",
+      "executableName": "clockodo-linux",
+      "synopsis": "Clocko:do for Linux",
+      "description": "Unofficial Clocko:do client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron.",
+      "executableArgs": [
+        "--ozone-platform=wayland"
+      ],
+      "desktop": {
+        "entry": {
+          "Name": "Clocko:do for Linux",
+          "Comment": "Unofficial client for Clocko:do for Linux"
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "electron": "^41.3.0",
+    "electron-builder": "^26.8.1"
+  }
+}
